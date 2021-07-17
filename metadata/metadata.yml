@@ -1,0 +1,12 @@
+metadata_version: 1
+name: FRESIS 1.0 (Fluid-Rigid-Elastic Structure Interaction Solver)
+tags:
+- Fluid-Structure Interaction
+- Incompressible Flow
+- Navier-Stokes Equations
+- Saint Venant-Kirchhoff
+- Mooney-Rivlin
+- Cauchy-Green deformation tensor
+- Elastic Structure
+- Rigid Structure
+- Monolithic Solver
