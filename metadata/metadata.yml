@@ -1,5 +1,6 @@
 metadata_version: 1
 name: FRESIS 1.0 (Fluid-Rigid-Elastic Structure Interaction Solver)
+description: FRESIS 1.0 is a Fluid-Rigid-Elastic Structure Interaction Solver which takes the advantage of a monolithic mathematical model and models the interaction of fluid-rigid-elastic structures simultaneously based on a finite difference scheme. This solver uses a novel force-free immersed boundary method for derivation of the influence of the rigid structure and can employes a variety of constitutive equations for modeling the fluid-elastic interaction in a unique Eulerian framework.
 tags:
 - Fluid-Structure Interaction
 - Incompressible Flow
