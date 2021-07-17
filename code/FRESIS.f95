@@ -126,7 +126,7 @@ DO I=1,IM
 READ(11230,*)    X(I,J),Y(I,J),U(I,J),V(I,J),SI(I,J),OMEGA(I,J),PHIS(I,J),BXX(I,J),BXY(I,J),BYX(I,J),BYY(I,J),DUMMY
 END DO
 END DO
-PAUSE "==File is read=="
+!PAUSE "==File is read=="
 CLOSE(11230)
 ELSE
 DO I=1,IM
@@ -1152,13 +1152,15 @@ INTEGER MEM
 REAL(8) Z
 COMMON /memory/ Z(MEMLEN),MEM
 !------------------------------------------------------------------------------
-IF(MEM+LEN+1 > MEMLEN) PAUSE 'INSUFFICIENT MEMORY IN MALOC'
+IF(MEM+LEN+1 > MEMLEN) THEN 
+PRINT*, 'INSUFFICIENT MEMORY IN MALOC'
+ELSE
 !------------------------------------------------------------------------------
 Z(MEM+1)=LEN
 MALOC=MEM+2
 MEM=MEM+LEN+1
 !------------------------------------------------------------------------------
-RETURN
+END IF
 END
 !==============================================================================
 SUBROUTINE RSTRCT(UC,UF,NC_X,NC_Y)

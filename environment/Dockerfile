@@ -1,9 +1,9 @@
-# hash:sha256:afebed87ce16b6f26225c9eb2121d10ac044597edc4739773ef00cbe19c8d6ff
+# hash:sha256:b511f80f2e74eb2312f551f3c3bf5ba5ec2c62df75233eef8fe5ae1c0c603f9b
 FROM registry.codeocean.com/codeocean/ubuntu:20.04.2
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        gfortran \
+        gfortran=4:9.3.0-1ubuntu2 \
     && rm -rf /var/lib/apt/lists/*
